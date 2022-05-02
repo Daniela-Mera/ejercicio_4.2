@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :codigo, style: "display: block" %>
-    <%= form.number_field :codigo %>
+    <%= form.number_field :codigo, min:1 %>
   </div>
 
   <div>
@@ -28,7 +28,7 @@
 
   <div>
     <%= form.label :precio, style: "display: block" %>
-    <%= form.number_field :precio %>
+    <%= form.number_field :precio, min:0 %>
   </div>
 
   <div>
