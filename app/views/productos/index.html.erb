@@ -1,0 +1,33 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Productos</h1>
+
+<div id="productos">
+
+  <!--intento 1 de meter los productos en una tabla-->
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @productos.each do |producto| %>
+        <tr>
+          <th scope="row"><%=producto.codigo%></th>
+          <td><%=producto.nombre%></td>
+          <td><%=producto.descripcion%></td>
+          <td><%=producto.precio%></td>
+          <td><%= link_to "Ver", producto %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
+
+<%= button_to "Crear nuevo producto",  new_producto_path %>
