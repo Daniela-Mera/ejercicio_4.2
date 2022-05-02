@@ -23,17 +23,27 @@ class ProductosController < ApplicationController
 
   # POST /productos or /productos.json
   def create
-    @producto = Producto.new(producto_params)
 
-    respond_to do |format|
-      if @producto.save
-        format.html { redirect_to producto_url(@producto), notice: "El producto ha sido creado." }
-        format.json { render :show, status: :created, location: @producto }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @producto.errors, status: :unprocessable_entity }
+    @busqueda = Producto.find_by(codigo: producto_params[:codigo])
+
+    if @busqueda.present?
+
+      respond_to do |format|
+        format.html { redirect_to "/productos/new", notice: "Código duplicado." }
+        format.json { render :new, status: :ok, location: @producto }
+      end
+
+    else
+      @producto = Producto.new(producto_params)
+
+      if @producto.save 
+        respond_to do |format|
+          format.html { redirect_to producto_url(@producto), notice: "El producto ha sido creado." }
+          format.json { render :show, status: :ok, location: @producto }
+        end
       end
     end
+
   end
 
   # PATCH/PUT /productos/1 or /productos/1.json
