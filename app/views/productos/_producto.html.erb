@@ -1,4 +1,5 @@
 <div id="<%= dom_id producto %>">
+
   <p>
     <strong>Codigo:</strong>
     <%= producto.codigo %>
@@ -18,5 +19,12 @@
     <strong>Precio:</strong>
     <%= producto.precio %>
   </p>
+
+  <p>
+    <strong>Imagen subida:</strong>
+    <% if producto.image.attached? %>
+      <%= image_tag producto.image, :class => "img img-fluid"%>
+    <% end %>
+  </p>  
 
 </div>

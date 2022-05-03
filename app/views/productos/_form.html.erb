@@ -31,6 +31,19 @@
     <%= form.number_field :precio, min:0 %>
   </div>
 
+  <p>
+    <p>Imagen subida:</p>
+    <% if producto.image.attached? %>
+      <%= image_tag producto.image, :class => "img img-fluid"%>
+    <% end %>
+  </p> 
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.file_field :image %>
+  </div>
+<br>
+
   <div>
     <%= form.submit @textboton %>
   </div>
