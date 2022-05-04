@@ -1,0 +1,50 @@
+.enlacesheader
+{
+    /*display: table-cell*/
+    /*margin: 5px 10px;*/
+    /* height: 34px;*/
+    line-height: 17px;
+    /*vertical-align: middle;*/
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: none;
+    color: #1c1f23;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0   
+}
+
+.enlacesgrandes
+{
+    /*display: table-cell*/
+    /*margin: 5px 10px;*/
+    /* height: 34px;*/
+    line-height: 17px;
+    /*vertical-align: middle;*/
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    text-decoration: none;
+    color: #1c1f23;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0   
+}
+
+.enlaces
+{
+    /*display: table-cell*/
+    /*margin: 5px 10px;*/
+    /* height: 34px;*/
+    line-height: 17px;
+    /*vertical-align: middle;*/
+    font-size: 16px;
+    font-weight: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #1c1f23;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: 0   
+}

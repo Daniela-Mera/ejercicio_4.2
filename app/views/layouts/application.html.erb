@@ -1,25 +1,234 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ejercicio42</title>
+    <title>Libreria de Daniela</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "miestilo", "data-turbo-track": "reload" %>
-
+    <%= stylesheet_link_tag "style_pcgram", "data-turbo-track": "reload" %>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   </head>
 
   <body>
     <!-- Bootstrap .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint. -->
+    <!--header-->
+      <!--cinta superior-->
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <div class="col-7 d-flex align-items-center justify-content-between">
+                Envios a todo Chile
+              </div>
+              <div class="col-5 d-flex align-items-center justify-content-between">
+                <a href="">
+                  <img src="http://drive.google.com/uc?export=view&id=1OlUZZl4rECPNrCrQtZ0y3qlSSU48wXMh" alt="" width="30" height="30" class="float-right img-fluid d-inline-block align-text-top">
+                </a>
+                <span>Llamanos</span>
+                <a href="">
+                  <img src="http://drive.google.com/uc?export=view&id=1Py61Nf3mBA6UvfsJJiI0-2KpfZMai1nm" alt="" width="30" height="30" class="float-right img-fluid d-inline-block align-text-top">	
+                </a>
+                <span>Ayuda</span>
+                <a href="">
+                  <img src="http://drive.google.com/uc?export=view&id=1nDhV7HZPzjHKP28iatKJFjzpp4t2gcpM" alt="" width="30" height="30" class="float-right img-fluid d-inline-block align-text-top">
+                </a>
+                <span>Registrate</span>
+                <a href="">
+                  <img src="http://drive.google.com/uc?export=view&id=1Oadmir4dZABdqf38isEsJ0QeB4ba792v" alt="" width="30" height="30" class="float-right img-fluid d-inline-block align-text-top">	
+                </a>
+              <span>Inicio</span>        
+              </div>
+            </div>
+        </div>
+      <br>
+
+      <!--barra busqueda-->
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-2">
+              <img src="http://drive.google.com/uc?export=view&id=1LEqxkUgnlSUl-u0HivuziaLkZSy9tJoy" alt=""  height="48" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+            <div class="col-2">
+              <img src="http://drive.google.com/uc?export=view&id=1Py5QJMXqiTq6eWKrzWkFjZ-iicl6K62Q" alt="" height="30" class="">
+              <img src="http://drive.google.com/uc?export=view&id=1OcwKQUcQdfX4XWK0P5dXd1C9JPNSA3KF" alt="" height="30" class="">
+            </div>
+            <div class="col-4 d-flex align-items-center justify-content-between">
+              <img src="http://drive.google.com/uc?export=view&id=1Or7qRndX_InywFXgG-Y4xCF7fjMyW9IK" alt="" height="30" class="">
+              <span class="text-left">seguimiento</span>
+              <span>  </span>
+              <img src="http://drive.google.com/uc?export=view&id=1OZWXF2Ui2C5GeCBXBAlwazWkbi23IR1_" alt="" height="30" class="">
+              <span class="text-left">comparar</span>
+              <span>  </span>
+              <img src="http://drive.google.com/uc?export=view&id=1OvZ_vCJM74tlcu4ZyB2WaDDvCLLRy8Ar" alt="" height="30" class="">
+              <span class="text-left">busqueda</span>
+            </div>
+          </div>
+        </div>
+      <br>
+      <!--barra navegacion-->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portatiles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Computadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Partes y piezas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Almacenamiento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Apple</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Monitores</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Proyectores</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Impresoras</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Tintas/Toner</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Servidores</a>
+                  </li> <li class="nav-item">
+                    <a class="nav-link" href="#">Redes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Accesorios</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">+ categorias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    <!--yield-->
     <div class="container productos">
       <%= yield %>
     </div>
-    
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <br>
+    <!--footer-->
+      <!--botones-->
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <a href="">
+                  <img  height="55" src="http://drive.google.com/uc?export=view&id=1Or7qRndX_InywFXgG-Y4xCF7fjMyW9IK" >
+              </a>
+              <span>ESTADO DE COMPRA</span>
+            </div>
+            <div class="col-3">
+              <a href="">
+                  <img height="55" src="http://drive.google.com/uc?export=view&id=1O_Wm35t4-yAFpwhJKuwTQwvFdTpR5GUO" >
+              </a>
+              <span>CONTACTANOS</span>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                  <img height="55" src="http://drive.google.com/uc?export=view&id=1OlUZZl4rECPNrCrQtZ0y3qlSSU48wXMh" >
+              </a>
+              <span>+569 12345678</span>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                  <img height="55" src="http://drive.google.com/uc?export=view&id=1Py61Nf3mBA6UvfsJJiI0-2KpfZMai1nm" >         
+              </a>
+              <span>CENTRO DE AYUDA</span>
+            </div>
+          </div>
+        </div>
+      <br>
+      <!--listas-->
+        <div class="container">
+          <div class="row">
+            <!--primera columna, logos-->
+              <div class="col-3">
+                <div class="row d-flex align-items-center">
+                  <a href="">
+                     <img src="http://drive.google.com/uc?export=view&id=1LEqxkUgnlSUl-u0HivuziaLkZSy9tJoy" height="80" alt="Responsive image">
+                  </a>
+                </div>
+                <div class="row d-flex align-items-center">
+                  <div class="col">
+                    <a href="">
+                      <img src="http://drive.google.com/uc?export=view&id=1TcRwNF17GlOhTmzxOiaGCk1MMHvyIgL0" height="20" alt="Responsive image">
+                    </a>
+                    <span></span>
+                  </div>
+                  <div class="col">
+                    <a href="">
+                      <img src="http://drive.google.com/uc?export=view&id=1Tdh1Q31ZTMlTHU_ND6wtVAVdFX5eekAJ" height="20" alt="Responsive image">
+                    </a>
+                    <span></span>
+                  </div>
+                  <div class="col">
+                    <a href="">
+                      <img src="http://drive.google.com/uc?export=view&id=1TT_gxjHFEkFAtp8rgT91SB9KeregEfQJ" height="20" alt="Responsive image" >
+                    </a>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            <!--segunda columna, acerca de-->
+              <div class="col-3">
+                <nav>
+                  <ul>
+                    <li><a class="enlaces" href="/que-es-winpy" title="Acerca de Nosotros">Acerca de Nosotros</a></li>
+                    <li><a class="enlaces" href="/politicas-de-privacidad" title="Póliticas de Privacidad">Póliticas de Privacidad</a></li>
+                    <li><a class="enlaces" href="https://winpy.zendesk.com/hc/es/sections/115001408088-Garant%C3%ADas-" target="_blank" title="Garantías">Garantías</a></li>
+                    <li><a class="enlaces" href="/trabaja-con-nosotros/" title="Trabaja Con Nosotros">Trabaja Con Nosotros</a></li>
+                  </ul>
+                </nav>
+              </div>
+            <!--tercera columna, politicas-->
+              <div class="col-3">
+                <nav>
+                  <ul>
+                    <li><a class="enlaces" href="/estado-de-compra/" title="Revisa el estado de tu Compra">Estado de tu compra</a></li>
+                    <li><a class="enlaces" href="https://winpy.zendesk.com/hc/es/sections/115001408108-Retiros-y-Despachos" target="_blank" title="Retiros y Despachos">Retiros y Despachos</a></li>
+                    <li><a class="enlaces" href="https://winpy.zendesk.com/hc/es/sections/115001402087-Formas-de-Pago" target="_blank" title="Formas de Pago">Formas de Pago</a></li>
+                    <li><a class="enlaces" href="/solicita-factura/" title="Facturación Electrónica">Facturación Electrónica</a></li>
+                  </ul>
+                </nav>
+              </div>
+            <!--cuarta columna, seguridad-->
+              <div class="col-3">
+                <p>Todas tus compras estan seguras</p>
+                <img src="http://drive.google.com/uc?export=view&id=1RHyckzLywizGEPosDfqfJ1CNAZIVXfWk" alt="Certificado SSL" class="img-fluid">
+                <img src="http://drive.google.com/uc?export=view&id=1RX_zMlosclVEX3DNZctRCLx16EQZ6t1J" alt="Webpay Plus" class="img-fluid">
+              </div>
+          </div>
+          <div class="row">
+          </div>
+        </div>
+      <br>
+      <!--cinta inferior-->
+        <div class="container">
+          <div class="row text-center" style="background: #f3f3f3">
+            <span>PC GRAM | TODOS LOS DERECHOS RESERVADOS</span>
+          </div>
+        </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   </body>
